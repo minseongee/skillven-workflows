@@ -17,9 +17,13 @@ steps:
     skill: remotion-dev/skills/skills/remotion-captions
   - id: render
     title: Render the video
-    skill: remotion-dev/skills/skills/remotion-render
     output: an MP4 file
 ---
 ## script
 Agree on the length (usually 30 to 90 seconds), the audience, the three things the video
 must show, and the screens or assets to use. Write the script scene by scene with timings.
+
+## render
+Preview the video in Remotion Studio with the user first, then render it with the Remotion
+CLI (`npx remotion render`) to an MP4 at 1080p unless the user wants another size. Report
+the output path, the length and the file size.
